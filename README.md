@@ -156,7 +156,7 @@ public class StuDwtails extends Student {
     COMPILE time/Static           RUNTIME / Dynamic
      |                                   |
      Overloading                   Overriding
-Method Overloading_
+Method Overloading
 Method with same name existing multiple times in same class but with different type of PARAMETERS
                 |    Student           |
                 |       |              |
@@ -165,6 +165,144 @@ Method with same name existing multiple times in same class but with different t
                 | print(id,name)       |
                 |       |              | 
                 | print(grade)         |
+#Syntax
+class parent_class_name
+{
+  Returntype1 Function_A(Parameter1)
+  {Def1}
+  Returntype2 Function_A(P1,P2)
+  {Def2}
+  Returntype2 Function_A(P1,P2,P3)
+  {Def2}
+  }
+  
+  Example-4.1
+  class Shape
+  {
+   void draw9height,width)
+   { ......
+     System.out.println(draw rectangle);
+     }
+     void draw(radius)
+     {
+        System.out.println(draw circle);
+     }
+     void draw(side)
+     {
+        System.out.println(draw square);
+     }
+    }
+
+    
+>>>Method Overriding<<<
+#In INHERITENCE, when child class redefines METHOD of parent class,it is called METHOD OVERRIDING.
+>>>Note- The member FUNCTION PROTOTYPE or SIGNATURE must be same in child and parent class.
+
+                          s--------->     Draw() Circle
+                         Shape ---------> Draw() rectangle
+                          s---------->    Draw() square
+                         Draw()
+Example:4.2
+package oop.Example;
+public class Student {
+  void addMarks(int a,int b)
+  {
+      System.out.println(Adding 2 integers " +a +" + " +b"+ : "+(a+b));
+  }
+  void addMarks(int a)
+  {
+      System.out.println(Adding integer " + a + " to 500 " + (a+500));
+  }
+  void addMark(float a,float b,float c)
+  { 
+       System.out.println("Adding 3 floats " + (a+b+c));
+   }
+ } 
+
+ <<<<<<<
+ package opp.Example;
+
+ public class Basic {
+
+ Student obj=new Student();//object of Student class
+ obj.addMarks(75,85);
+ obj.addMarks(98);
+ obj.addMarks(75.456f, 85.457f, 98.658f);
+ O/P:
+ Adding 2 integers 75+85: 160
+ Adding integer 98 to 500 598
+ Adding 3 floats 259.57098
+
+ >>>
+> >>package oop.Example;
+public class StuDetails extends Student {
+    void addMarks(int a,int b)
+    {
+      System.out.println("Adding 2 integers to 1000" +a +" + " +b+": "+(a+b+1000));
+    }
+}
+ 
+>>>>Method OVERRIDING<<<<
+>>In INHERITENCE, when child class redefines METHOD of parent class, it is called METHOD OVERIDING.
+>>>>Note- The member FUNCTION PROTOTYPE or SIGNATURE must be same in child and parent class.
+#SYNTAX
+class parent_class_name
+{
+  Returntype Function1()
+  {Defined}
+}
+class child_class_name extends parent_class_name
+{
+   Returntype Function1()
+   {Re Defined/Overriden}
+Example: 4.1.1
+ class Shape
+ {
+  void draw()
+  {
+    System.out.println(draw shape);
+  }
+}
+class Triangle extends Shape
+{
+  // member function
+     void draw()
+     {
+          System.out.println(draw triangle);
+     }
+}
+>>>>ABSTRACTION<<<<<
+>>Hiding functionality/implementation and showing only necessary details is Abstraction.
+>>>>Note: ABSTRACT CLASS and INTERFACES are used to acheive ABSTRACTION in java.
+_________________
+Employee       >>>>..>>>>>   Teacher DisplayDetails()
+DisplayDetails() >>>>>>>>     Accountant DiplayDetails()
+__________________>>>>..>...>.> Principal DisplayDetails()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+                         
                          
                
   
